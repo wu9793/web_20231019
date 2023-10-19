@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            height: 2000px;
+            font-size: 30px;
+            background-image: url(./images/02.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .nav-fixed{
+            position: fixed;
+            background-color: lightgray;
+            top: 0;
+            width: 100%;
+            height: 8vh;
+            z-index: 100;
+
+        }
+
+        .container{
+            color: #ccc;
+        }
+
+        .pos-static {
+            left: 30px;
+            /* 預設值不會改變位置 */
+        }
+
+        .pos-relative {
+            position: relative;
+            left: 30px;
+            /* 相對位置移動 */
+        }
+
+        .box-relative{
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: lightgray;
+            background-image: url(./images/01.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .box-absolute {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(173, 240, 236);
+            /* 絕對位置 */
+        }
+
+        .pos-fixed {
+            position: fixed;
+            right: 100px;
+            bottom: 30px;
+            color: #ccc;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        h3{
+            display: none;
+        }
+        .footer{
+            position: fixed;
+            bottom:0;
+            width: 70%;
+            height: 8vh;
+            background-color: lightskyblue;
+            margin-left: 15%;
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-fixed">
+
+    </nav>
+    <div class="container">
+        <h3>position</h3>
+        <br>
+        <hr><br>
+        <h4>static</h4>
+        <p class="pos-static">
+            Lorem ipsum dolor sit amet.
+        </p>
+        <br>
+        <hr><br>
+        <h4>relative</h4>
+        <p class="pos-relative">
+            Lorem ipsum dolor sit amet.
+        </p>
+        <br>
+        <hr><br>
+        <h4>absolute</h4>
+        <div class="box-relative">
+            <div class="box-absolute">
+
+            </div>
+        </div>
+        <br>
+        <hr><br>
+        <h4>fixed</h4>
+        <h5>nav & footer</h5>
+        <p class="pos-fixed">
+            <!-- Lorem ipsum dolor sit amet. -->
+
+        </p>
+        <a href="#" class="pos-fixed">top</a>
+
+        <footer class="footer">
+
+        </footer>
+
+
+
+    </div>
+</body>
+
+</html>
